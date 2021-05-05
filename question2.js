@@ -1,3 +1,7 @@
+// Write a simple encryption function
+// that takes a sentence and prints out zeros and ones as follows:
+// for each word, if the length of the word is divisible by 3 print 0 else print 1.
+
 function encryptText(text) {
 
     let textArray = text.split(" ")
