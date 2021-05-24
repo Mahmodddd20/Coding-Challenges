@@ -8,7 +8,7 @@ const findCommonLettersInWords = (words) => {
             CommonLetter.push(words[0][indexFirstWord]);
         }
     }
-    if (CommonLetter.length < words.length - 1) {
+    if (CommonLetter.length < words.length ) {
         CommonLetter = ['']
     } else {
         for (let k = 0; k < CommonLetter.length-1; k++) {
@@ -25,4 +25,3 @@ const findCommonLettersInWords = (words) => {
 
 console.log(findCommonLettersInWords(["Saleem", "Soda", "Khaled"])); // output: ['a']
 console.log(findCommonLettersInWords(["Pepsi", "Kitkat", "Oreo"])); // output: []
-console.log(findCommonLettersInWords(["Slaleem", "Solda", "Khaled","ahmad"])); // output: ['a']
