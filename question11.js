@@ -1,25 +1,25 @@
 function fullPath(path) {
     let startingPoints = [];
     let endingPoints = [];
-    let fullPath = [];
+    let result = [];
     for (let i = 0; i < path.length; i++) {
         startingPoints.push(path[i].from);
         endingPoints.push(path[i].to);
     }
     for (let i = 0; i < path.length; i++) {
         if (!endingPoints.includes(path[i].from)) {
-            fullPath.push(path[i].from);
+            result.push(path[i].from);
             break;
         }
     }
     for (let i = 0; i < path.length; i++) {
-        if (startingPoints.includes(fullPath[i])) {
-            let a = startingPoints.indexOf(fullPath[i]);
-            fullPath.push(endingPoints[a]);
+        if (startingPoints.includes(result[i])) {
+            let a = startingPoints.indexOf(result[i]);
+            result.push(endingPoints[a]);
         }
 
     }
-    return fullPath;
+    return result;
 
 }
 
