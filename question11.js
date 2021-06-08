@@ -17,8 +17,8 @@ function fullPath(path) {
 
     for (let i = 0; i < path.length; i++) {
         if (startingPoints.includes(result[i])) {
-            let a = startingPoints.indexOf(result[i]);
-            result.push(endingPoints[a]);
+            let indexOfPoint = startingPoints.indexOf(result[i]);
+            result.push(endingPoints[indexOfPoint]);
         }
     }
     return result;
